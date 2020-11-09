@@ -4,4 +4,6 @@
     <string name="app_name_title">Jobber</string>
     <string name="app_creator_splashScreen">Gemaakt door Dave Visser</string>
     <string name="welcome_screen_text">Welkom, wie bent u?</string>
+    <string name="selection_screen_Text_1">Ik ben een...</string>
+    <string name="selection_screen_Text_2">of</string>
 </resources>
