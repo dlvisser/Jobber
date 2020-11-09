@@ -11,13 +11,13 @@ import android.widget.TextView
 class SplashScreenActivity : AppCompatActivity() {
 
     // Splash screen timer
-    private val SPLASH_TIME_OUT = 7000L
+    private val SPLASH_TIME_OUT = 4000L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscreen)
-        val tvJobberTitle : TextView = findViewById(R.id.tvJobberTitle)
-        val tvJobberExplanation: TextView = findViewById(R.id.tvJobberExplanation)
-        val tvJobberCreator: TextView = findViewById(R.id.tvMadeByCreator)
+        val tvJobberTitle : TextView = findViewById(R.id.jobberTitleTextView)
+        val tvJobberExplanation: TextView = findViewById(R.id.jobberExplanationTextView)
+        val tvJobberCreator: TextView = findViewById(R.id.madeByCreatorTextView)
 
         tvJobberTitle.text = changeTextColor(R.string.app_name_title,0,3)
         tvJobberExplanation.text = changeTextColor(R.string.app_splashscreen_intro,resources.getString(R.string.app_splashscreen_intro).indexOf("start-ups"), resources.getString(R.string.app_splashscreen_intro).indexOf("ups")+3, resources.getString(R.string.app_splashscreen_intro).indexOf("programmers"),resources.getString(R.string.app_splashscreen_intro).length)
@@ -25,7 +25,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler().postDelayed(
                 {
-                    val i = Intent(this@SplashScreenActivity, HomeActivity::class.java)
+                    val i = Intent(this@SplashScreenActivity, WelcomeActivity::class.java)
                     startActivity(i)
                     finish()
                 }, SPLASH_TIME_OUT)
