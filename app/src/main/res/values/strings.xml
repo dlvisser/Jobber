@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Jobber</string>
+    <string name="app_name_title">Jobber</string>
+    <string name="app_splashscreen_intro" translatable="false">The tinder-like experience for - start-ups and programmers</string>
+    <string name="app_creator_splashScreen">Made by Dave Visser</string>
 </resources>
