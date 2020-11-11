@@ -6,4 +6,6 @@
     <string name="welcome_screen_text">Welkom, wie bent u?</string>
     <string name="selection_screen_Text_1">Ik ben een...</string>
     <string name="selection_screen_Text_2">of</string>
+    <string name="selection_screen_Button_Programmer">Programmeur</string>
+    <string name="selection_screen_Button_Startup">Startup</string>
 </resources>
