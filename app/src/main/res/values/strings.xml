@@ -5,4 +5,9 @@
     <string name="app_creator_splashScreen">Made by Dave Visser</string>
 
     <string name="welcome_screen_text">Welcome,\n who are you?</string>
+
+    <string name="selection_screen_Text_1">I\'m a...</string>
+    <string name="selection_screen_Text_2">or</string>
+    <string name="selection_screen_Button_Programmer">Programmer</string>
+    <string name="selection_screen_Button_Startup">Startup</string>
 </resources>

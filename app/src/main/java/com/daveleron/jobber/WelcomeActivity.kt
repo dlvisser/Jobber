@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
+import android.transition.Slide
+import android.view.Gravity
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +16,6 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
         val tvWelcomeText : TextView = findViewById(R.id.welcomeTextView)
-
         tvWelcomeText.text = changeTextColor(R.string.welcome_screen_text,resources.getString(R.string.welcome_screen_text).indexOf("you"),resources.getString(R.string.welcome_screen_text).indexOf("you") + 3)
         tvWelcomeText.setOnClickListener {
             val i = Intent(this@WelcomeActivity, SelectionActivity::class.java)
