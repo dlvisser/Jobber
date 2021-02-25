@@ -9,19 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jobber">
-        <activity android:name=".SplashScreenActivity" android:screenOrientation="portrait">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".SelectionActivity" android:theme="@style/Theme.Jobber.SelectionScreen" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectionScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobber.SelectionScreen" />
+        <activity
+            android:name=".RegistrationScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SwipeScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ChatScreenActivity" android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>
