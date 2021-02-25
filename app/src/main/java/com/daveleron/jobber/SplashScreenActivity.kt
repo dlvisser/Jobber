@@ -35,7 +35,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 {
                     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
                         val i = Intent(this@SplashScreenActivity, WelcomeActivity::class.java)
-                        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
+                        startActivity(i)
                         finish()
                     }
                     else {
@@ -49,7 +49,6 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun changeTextColor(textResource : Int,startIndex : Int, endIndex : Int): SpannableString {
         val mSpannableString = SpannableString(resources.getString(textResource))
         val colorPrimary = ForegroundColorSpan(resources.getColor(R.color.Primary_Green))
-        val colorAccent = R.color.Primary_White
         mSpannableString.setSpan(colorPrimary, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         return mSpannableString
     }

@@ -10,4 +10,33 @@
     <string name="selection_screen_Text_2">or</string>
     <string name="selection_screen_Button_Programmer">Programmer</string>
     <string name="selection_screen_Button_Startup">Startup</string>
+
+    <string name="registration_screen_lets_get_started" translatable="false">Alright...\nLet\'s get started</string>
+    <string name="registration_screen_programmer_name" translatable="false">Name*</string>
+    <string name="registration_screen_programmer_email" translatable="false">Email*</string>
+    <string name="registration_screen_programmer_website" translatable="false">Website</string>
+    <string name="registration_screen_programmer_gender" translatable="false">Gender*</string>
+    <string name="registration_screen_programmer_language" translatable="false">Language*</string>
+
+    <string name="registration_screen_programmer_name_hint" translatable="false">John Doe</string>
+    <string name="registration_screen_programmer_email_hint" translatable="false">John.Doe@example.com</string>
+    <string name="registration_screen_programmer_website_hint" translatable="false">Example.com</string>
+    <string name="registration_screen_programmer_gender_hint" translatable="false">Male</string>
+    <string name="registration_screen_programmer_language_hint" translatable="false">English</string>
+
+    <string name="registration_screen_startup_company_name" translatable="false">Company name*</string>
+    <string name="registration_screen_startup_company_recruiter_email" translatable="false">Email*</string>
+    <string name="registration_screen_startup_company_website" translatable="false">Website*</string>
+    <string name="registration_screen_startup_company_zipcode" translatable="false">ZipCode*</string>
+    <string name="registration_screen_startup_company_language" translatable="false">Company Language*</string>
+
+    <string name="registration_screen_startup_company_name_hint" translatable="false">John Doe Company</string>
+    <string name="registration_screen_startup_company_recruiter_email_hint" translatable="false">John.Doe@company.com</string>
+    <string name="registration_screen_startup_company_website_hint" translatable="false">Company.com</string>
+    <string name="registration_screen_startup_company_zipcode_hint" translatable="false">1234 AZ</string>
+    <string name="registration_screen_startup_company_language_hint" translatable="false">English</string>
+
+    <string name="registration_screen_btn_continue" translatable="false">continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>

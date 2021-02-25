@@ -4,10 +4,7 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
-import android.transition.Slide
-import android.view.Gravity
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class WelcomeActivity : AppCompatActivity() {
@@ -18,7 +15,7 @@ class WelcomeActivity : AppCompatActivity() {
         val tvWelcomeText : TextView = findViewById(R.id.welcomeTextView)
         tvWelcomeText.text = changeTextColor(R.string.welcome_screen_text,resources.getString(R.string.welcome_screen_text).indexOf("you"),resources.getString(R.string.welcome_screen_text).indexOf("you") + 3)
         tvWelcomeText.setOnClickListener {
-            val i = Intent(this@WelcomeActivity, SelectionActivity::class.java)
+            val i = Intent(this@WelcomeActivity, SelectionScreenActivity::class.java)
             startActivity(i)
             finish()
         }
@@ -29,7 +26,6 @@ class WelcomeActivity : AppCompatActivity() {
     private fun changeTextColor(textResource : Int,startIndex : Int, endIndex : Int): SpannableString {
         val mSpannableString = SpannableString(resources.getString(textResource))
         val colorPrimary = ForegroundColorSpan(resources.getColor(R.color.Primary_Green))
-        val colorAccent = R.color.Primary_White
         mSpannableString.setSpan(colorPrimary, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         return mSpannableString
     }
