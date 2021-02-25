@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary_Background"
+    tools:context=".fragments.registration.ProgrammerRegistrationFragment">
+
+    <EditText
+        android:id="@+id/etProgrammerLanguage"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_shape_white"
+        android:ems="10"
+        android:fontFamily="@font/monda"
+        android:inputType="textPersonName"
+        android:text="@string/registration_screen_programmer_language_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etProgrammerGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgrammerLanguage" />
+
+    <TextView
+        android:id="@+id/tvProgrammerLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/monda_bold"
+        android:text="@string/registration_screen_programmer_language"
+        android:textColor="@color/Primary_Green"
+        app:layout_constraintStart_toEndOf="@+id/etProgrammerGender"
+        app:layout_constraintTop_toBottomOf="@+id/etProgrammerWebsite" />
+
+    <EditText
+        android:id="@+id/etProgrammerGender"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_shape_white"
+        android:ems="10"
+        android:fontFamily="@font/monda"
+        android:inputType="textPersonName"
+        android:text="@string/registration_screen_programmer_gender_hint"
+        app:layout_constraintEnd_toStartOf="@+id/etProgrammerLanguage"
+        app:layout_constraintStart_toStartOf="@+id/tvProgrammerWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgrammerGender" />
+
+    <TextView
+        android:id="@+id/tvProgrammerGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/monda_bold"
+        android:text="@string/registration_screen_programmer_gender"
+        android:textColor="@color/Primary_Green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProgrammerWebsite" />
+
+    <EditText
+        android:id="@+id/etProgrammerWebsite"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_shape_white"
+        android:ems="10"
+        android:fontFamily="@font/monda"
+        android:inputType="textPersonName"
+        android:text="@string/registration_screen_programmer_website_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvProgrammerWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgrammerWebsite" />
+
+    <TextView
+        android:id="@+id/tvProgrammerWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/monda_bold"
+        android:text="@string/registration_screen_programmer_website"
+        android:textColor="@color/Primary_Green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProgrammerEmail" />
+
+    <EditText
+        android:id="@+id/etProgrammerEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_shape_white"
+        android:ems="10"
+        android:fontFamily="@font/monda"
+        android:inputType="textPersonName"
+        android:text="@string/registration_screen_programmer_email_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvProgrammerEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgrammerEmail" />
+
+    <TextView
+        android:id="@+id/tvProgrammerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/monda_bold"
+        android:text="@string/registration_screen_programmer_email"
+        android:textColor="@color/Primary_Green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProgrammerName" />
+
+    <TextView
+        android:id="@+id/tvProgrammerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/monda_bold"
+        android:text="@string/registration_screen_programmer_name"
+        android:textColor="@color/Primary_Green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etProgrammerName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_shape_white"
+        android:ems="10"
+        android:fontFamily="@font/monda"
+        android:inputType="textPersonName"
+        android:text="@string/registration_screen_programmer_name_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvProgrammerName"
+        app:layout_constraintTop_toBottomOf="@+id/tvProgrammerName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
