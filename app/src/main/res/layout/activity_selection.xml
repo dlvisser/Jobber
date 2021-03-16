@@ -8,15 +8,16 @@
     tools:context=".SelectionScreenActivity">
 
     <ImageView
-        android:id="@+id/vectorBackground"
-        android:layout_width="920dp"
-        android:layout_height="579dp"
+        android:id="@+id/gradientBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:contentDescription="VectorBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/IconStartup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/half_moon" />
+        app:srcCompat="@drawable/gradient_background_green_black" />
 
     <TextView
         android:id="@+id/text1textView"
@@ -32,7 +33,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/vectorBackground" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/programmerButton"
