@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="Primary_White">#FFFFFFFF</color>
     <color name="Primary_Green">#08B89C</color>
+    <color name="Gradient_Green_Black">#0E6356</color>
     <color name="Primary_Background">#141414</color>
 </resources>
