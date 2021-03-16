@@ -6,6 +6,7 @@
         android:startColor="@color/Primary_Green"
         android:centerColor="@color/Gradient_Green_Black"
         android:endColor="@color/Primary_Background"
+        android:useLevel="false"
         android:angle="-90"
         />
 </shape>
